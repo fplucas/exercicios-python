@@ -11,4 +11,10 @@ for nota in range(1, 3):
     notas.append(float(input('Entre com a %s nota: ' % nota)))
 
 media = calcula_media(notas)
-print('A média é %s' % media)
+print('Sua média é %s' % media)
+if media == 10.0:
+    print('Aprovado com Distinção')
+elif media >= 7.0:
+    print('Aprovado')
+else:
+    print('Reprovado')
